@@ -1,20 +1,23 @@
 import React from "react";
 import Typed from "react-typed";
+import Navbar from "./Navbar"
 
 const Header = () =>{
     return(
         <div className="header-wrapper">
+            
             <div className="wrapper"> </div>
+            <Navbar/>
                 <div className ="main-info">
-                    <h1>Web development and websites promotions</h1>
+                    <h1>I'm Nematullo</h1>
+                    <h1>These are my technical skills:</h1>
                     <Typed  className = "typed-text" 
-                            strings={["Core Java", "Spring boot", "Hibernate","Restful API"]}
-                            typeSpeed={40}
+                            strings={["Java", "Spring-boot","Spring Web","Spring Data", "Hibernate","Thymeleaf","JavaFX","HTML, CSS, Javascript","React Js", "And more..."]}
+                            typeSpeed={60}
                             backSpeed={60}
                             loop/>
-                            <a href="#" className="btn-main-offer">Contact Me</a>
+                            <a href="#Contact" className="btn-main-offer">Contact Me</a>
                 </div>
-                
         </div>
     );
 }
