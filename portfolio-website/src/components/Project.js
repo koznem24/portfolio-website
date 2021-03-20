@@ -10,13 +10,13 @@ class Project extends Component{
    
     render(){
         return(
-            <div id="Project" className="col-sm-6">
+            <div className="col-sm-6">
                 <div class="project-item">
                     <div class="project-info">
                         <h1>{this.props.projectName}</h1>
                         <h4>{this.props.projectDescription}</h4>
                         <h5>Click <a href={this.props.liveDemo} style={{color:"#03aad7", cursor:"pointer"}}>here</a> for live demo</h5>
-                        <h5>Click <a href={this.props.gitSource} style={{color:"#03aad7", cursor:"pointer"}}>here</a> for source code</h5>
+                        <h5>Click <a href={this.props.gitSource} target="_blank"style={{color:"#03aad7", cursor:"pointer"}}>here</a> for source code</h5>
                     </div>
                     <div class="project-img">
                         <img src={this.props.imageSource} alt="img"/>
